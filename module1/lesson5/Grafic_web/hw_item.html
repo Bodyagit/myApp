@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,
+        body {
+            height: 100%;
+        }
+        
+/*        Прибиваем footer к низу страницы*/
+        
+        .wrapper {
+	        position: relative;
+	        min-height: 100%;    
+        }c  
+
+        .content {
+	        padding-bottom: 90px;
+        }
+        
+        
+        footer {
+	        position: absolute;
+	        left: 0;
+	        bottom: 0;
+	        width: 100%;
+	        
+        }
+        
+        /*        Прибиваем footer к низу страницы*/
+        
+
+        header {
+            height: 100px;
+            background: #923158;
+            margin-bottom: 10px;
+        }
+        
+        .menu {
+            height: 50px;
+            background: #6e1237;
+            margin-bottom: 10px;
+        }
+        
+        .box {
+            float: left;
+        }
+        
+        .block1 {
+           
+            width: 200px;
+            height: 100px;
+            background: #b65b80;
+            margin-bottom: 10px;
+           
+            
+        }
+        
+        .block2 {
+            width: 200px;
+            height: 200px;
+            background: #b65b80;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        
+         .block3 {
+            width: 170px;
+            height: 370px;
+            background: #b65b80;
+            
+             float: right;
+             padding-left: 10px;
+             
+        }
+        
+        main {
+          padding:20px 100px 20px;
+            width: 830px;
+           margin: 0 20px 10px 20px;
+         
+            height: 400px;
+            background: #b65b80;
+            border: 1px solid #333;
+            float: left;
+        }
+        
+        h1 {
+            text-transform: uppercase;
+            color:#fff;
+            margin-bottom: 50px;
+        }
+        
+        
+/*
+        .content::before,
+        .content::after
+        {
+            content: "";
+            display: table;
+        }
+        
+        
+        .content::after {
+            clear: both;
+        }
+*/
+        
+        section {
+            border: 1px solid #333;
+            height: 100px;
+            margin-bottom: 10px;
+            background: #db92af;
+        }
+        
+         p {
+            text-transform: uppercase;
+            color: #fff;
+            padding-top: 20px;
+            padding-left: 40px;
+            font-size: 21px;
+        }
+        
+        footer {
+            height: 100px;
+            background: #6e1237;
+            border: 1px solid #333;
+            
+        }
+        
+      
+    
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <header>
+            <p>header</p>
+        </header>
+         <nav class="menu">
+                <p>menu</p>
+            </nav>
+        <div class="content">
+            <div class="box">
+                <aside class="block1">
+                    <p>aside1</p>
+                </aside>
+                <aside class="block2">
+                    <p>aside2</p>
+                </aside>
+            </div>
+            <main>
+                <h1>main content</h1>
+                <section>
+                    <p>section1</p>
+                </section>
+                <section>
+                    <p>section2</p>
+                </section>
+            </main>
+            <aside class="block3">
+                <p>a</p>
+                <p>s</p>
+                <p>i</p>
+                <p>d</p>
+                <p>e</p>
+                <p>3</p>
+            </aside>
+            
+        </div>
+        <footer>
+            <p>footer</p>
+        </footer>
+    </div>
+</body>
+</html>

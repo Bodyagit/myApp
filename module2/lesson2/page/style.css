@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Times New Roman", sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    min-width: 728px;
+    margin: auto;
+}
+
+.row::after,
+.row::before {
+    content: "";
+    display: table;
+}
+
+.row::after {
+    clear: both;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+/*Header*/
+
+header {
+    text-align: center;
+    background-color: #ff6825;
+    min-height: 150px;
+    padding: 8% 0;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+}
+
+header h2 {
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+        0px 8px 13px rgba(0,0,0,0.1),
+        0px 18px 23px rgba(0,0,0,0.1);
+    text-decoration: none;
+}
+
+header p {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+/*Section .half*/
+    
+.half {
+    width: 50%;
+    float: left;
+    padding: 1.5%;
+}
+
+h2 {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    font-family: Camria, serif;
+}
+
+.half p {
+    margin: 7px 0;
+    text-align: justify;
+}
+
+.right-block {
+    float: right;
+    padding: 15px;
+    margin-left: 10px;
+}
+
+.video {
+    background-color: #e02f2f;
+    width: 55px;
+    height: 40px;
+    padding: 10px 24px;
+    border-radius: 9px/11px;
+    cursor: pointer;
+}
+
+.play {
+    border: 10px solid transparent;
+    border-left-color: #fff;
+}
+
+/*Section course*/
+.course {
+    width: 20%;
+    float: left;
+    padding: 1.5%;
+    margin-bottom: 20px;
+    min-height: 192px;
+}
+
+.price {
+    text-align: right;
+    font-weight: bold;
+    
+} 
+
+
+

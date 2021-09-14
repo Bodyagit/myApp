@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Anime</title>
+    <style>
+        body {
+            background: #000;
+        }
+        
+        .box {
+            background: #fff;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            animation-name: myanimation;
+            animation-duration: 4s;
+        }
+        
+        @keyframes myanimation {
+            0% { 
+                background: #fff;
+                left: 0px;
+                top: 0px;
+                border-radius: 0;
+            }
+            
+            25% {
+                background: #0c4103;
+                left: 300px;
+                top: 0px;
+                border-radius: 50% 0 0 0;
+                }
+            
+            50% {
+                background: #0990f4;
+                left: 300px;
+                top: 300px;
+                border-radius: 50% 50% 0 0;
+            }
+            
+            75% {
+                background: #cf06ff;
+                left: 0px;
+                top: 300px;
+                border-radius: 50% 50% 50% 0;
+            }
+            
+            100% {
+                background: #fff;
+                left: 0px;
+                top: 0px;
+                border-radius: 50% 50% 50% 50%;
+            }
+        }
+    
+    </style>
+</head>
+<body>
+   <div class="box">
+       
+   </div>
+    
+</body>
+</html>

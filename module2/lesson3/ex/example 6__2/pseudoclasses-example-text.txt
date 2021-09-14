@@ -1,0 +1,28 @@
+﻿Adobe Photoshop
+Experience with different multi-layer psd-layouts.
+Output images from the psd-layout.
+Image optimization for faster uploading.
+Skill 1
+
+HTML5/CSS3
+Layout of valid html-pages
+Understanding the principles of responsive design layout, adaptive page layout
+Bootstrap based html-page layout
+Good experience in creating multi-screen landing pages.
+Skill 2
+
+JavaScript/jQuery
+Understanding the DOM model in html document
+Experience using jQuery plugins: sliders, lightboxes, and others.
+Customization of scripts, setting of plugin parameters
+Initial knowledge of Vue.js
+Skill 3
+
+PHP/MySQL
+Creating plug-ins for Wordpress.
+Using PHP/MySql to create themes for Wordpress.
+Using MVC Templates.
+Initial knowledge of E-commerce Systems
+Skill 4
+
+My Skills

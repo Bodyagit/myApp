@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        caption {
+            caption-side: bottom;
+            text-align: center;
+            font-size: 24px;
+            text-transform: uppercase;
+            font-weight: 700;
+            text-shadow: 2px 3px 3px green;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            text-decoration: underline;
+            text-decoration-color: green;
+         
+        }
+        
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: auto;
+            min-width: 650px;
+            max-width: 800px;
+            
+        }
+        
+        th {
+            text-transform: uppercase;
+            color: #fff;
+            
+        }
+        tr th:first-child{
+            color: #666666;
+        }
+        
+        td, th{
+        text-align: center;
+        padding: 1em 0;
+        }
+        
+        
+        tr td:first-child{
+            text-align: left;
+            color: #666666;
+            padding-left: 0.7em;
+        }
+        
+        
+        
+        table, th, td {
+            border: 1px solid #333;
+          
+           
+            
+        }
+        
+        span{
+            padding: 20px;
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 1.2em;
+            display:inline-block;
+            border: 2px solid #ffffff;
+            padding-bottom: 2px;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            line-height: 18px;
+           
+            
+           
+        }
+        
+        thead{
+            /*задаем нижнюю границу для шапки таблицы*/
+            border-bottom: 1px solid #ebebeb;
+        }
+        
+        tfoot{
+            /*задаем верхнюю границу для подвала таблицы*/
+            border-top: 1px solid #ebebeb;
+        }
+        
+        .col-1{
+            background-color: #dddddd;
+            width: auto;
+            }
+        
+        .col-2{
+            background-color: #17d0d3;
+            width: 17%;
+        }
+        .col-3{
+            background-color: #8ac149;
+            width: 17%;
+        }
+        .col-4{
+            background-color: #feca28;
+            width: 17%;
+        }
+        .col-5{
+            background-color: #f44236;
+            width: 17%;
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+<table>
+    <caption>Title table</caption>
+    <colgroup>
+        <col class="col-1">
+        <col class="col-2">
+        <col class="col-3">
+        <col class="col-4">
+        <col class="col-5">
+    </colgroup>
+    <thead>
+        <tr>
+            <th>specification</th>
+            <th>free</th>
+            <th>basic</th>
+            <th>standard</th>
+            <th>premium</th>
+        </tr>
+    </thead>
+    <tfoot>
+    <tr>
+        <th>Total</th>
+        <th>$ 0.00</th>
+        <th>$ 9.99</th>
+        <th>$ 19.99</th>
+        <th>$ 29.99</th>
+    </tr>
+    </tfoot>
+    <tbody>
+        <tr>
+            <td>Lorem ipsum dolor</td>
+            <td>+</td>
+            <td>+</td>
+            <td>+</td>
+            <td>+</td>
+        </tr>
+        <tr>
+            <td>Ratione deserunt modi</td>
+            <td><span>+</span></td>
+            <td>+</td>
+            <td>+</td>
+            <td>+</td>
+        </tr>
+        <tr>
+            <td>Vel maiores odio</td>
+            <td><span>-</span></td>
+            <td>+</td>
+            <td>+</td>
+            <td>+</td>
+        </tr>
+        <tr>
+            <td>Minus vel aperiam natus</td>
+            <td><span>-</span></td>
+            <td><span>-</span></td>
+            <td><span>+</span></td>
+            <td><span>+</span></td>
+        </tr>
+        <tr>
+            <td>Provid minima sapiente</td>
+            <td>-</td>
+            <td>-</td>
+            <td><span>-</span></td>
+            <td>+</td>
+        </tr>
+        <tr>
+            <td>Eveniet eaque excepturi</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>+</td>
+        </tr>
+    </tbody>
+</table>
+    
+</body>
+</html>

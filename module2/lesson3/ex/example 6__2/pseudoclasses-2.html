@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudoclasses</title>
+    <style>
+        body {
+            width: 90%;
+            margin: 20px auto;
+            font-family: sans-serif;
+        }
+        
+        .box {
+            display: inline-block;
+            width: 120px;
+            height: 120px;
+            line-height: 120px;
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+            border: 2px solid #333;
+            margin: 15px;
+        }
+        .box:nth-child(odd) {background-color: #f99;}
+        .box:nth-child(even) {background-color: #f8f48c;}
+        .box-5:only-child {background-color: #f00;}
+    </style>
+</head>
+
+<body>
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box box-5">5</div>
+    <div class="box">6</div>
+    <div class="box">7</div>
+    <div class="box">8</div>
+    <div class="box">9</div>
+    <div class="box">10</div>
+</body>
+
+</html>

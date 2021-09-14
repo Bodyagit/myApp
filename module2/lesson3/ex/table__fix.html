@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HW5-table__fixed</title>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .wrapper {
+            width: 800px;
+            height: 400px;
+            margin: auto;
+            overflow: scroll;
+        
+            
+        }
+        
+        
+       table {
+        width: 600px;
+           height: 600px;
+          border-collapse: collapse;
+          text-align: center;
+            
+ } 
+        
+     
+        
+        
+        tr, td, th {
+            border: 1px solid #333;
+            padding: 10px;
+        }
+ 
+ 
+
+        table thead {
+            position: sticky;
+            top: -1px;
+            background: #6355cb;
+            z-index: 2;
+            height: 20px;
+            border: 1px solid #333;
+            
+            
+        }
+        
+        table thead tr th:first-child {
+            border: none;
+        }
+        
+        table tbody {
+           
+        } 
+        
+        table tbody tr td:first-child {
+            position: sticky;
+            left:0;
+            background: #6355cb;
+            z-index: 1;
+           border: none;
+        }
+
+
+
+table tbody tr:nth-child(even) {
+      background-color: #eab1d2;
+}
+        
+     
+        
+    
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Header1</th>
+                    <th>Header2</th>
+                    <th>Header3</th>
+                    <th>Header4</th>
+                    <th>Header5</th>
+                    <th>Header1</th>
+                    <th>Header2</th>
+                    <th>Header3</th>
+                    <th>Header4</th>
+                    <th>Header5</th>
+                    <th>Header1</th>
+                    <th>Header2</th>
+                    <th>Header3</th>
+                    <th>Header4</th>
+                    <th>Header5</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="blue">Line1</td>
+                    <td>123</td>
+                    <td>43</td>
+                    <td>53</td>
+                    <td>73</td>
+                    <td>43</td>
+                    <td>123</td>
+                    <td>43</td>
+                    <td>53</td>
+                    <td>73</td>
+                    <td>43</td>
+                </tr>
+                <tr>
+                    <td class="blue">Line2</td>
+                    <td>123</td>
+                    <td>43</td>
+                    <td>53</td>
+                    <td>73</td>
+                    <td>43</td>
+                    <td>123</td>
+                    <td>43</td>
+                    <td>53</td>
+                    <td>73</td>
+                    <td>43</td>
+                    <td>123</td>
+                    <td>43</td>
+                    <td>53</td>
+                    <td>73</td>
+                    <td>43</td>
+                </tr>
+                <tr>
+                    <td class="blue">Line3</td>
+                    <td>123</td>
+                    <td>43</td>
+                    <td>53</td>
+                    <td>73</td>
+                    <td>43</td>
+                    <td>123</td>
+                    <td>43</td>
+                    <td>53</td>
+                    <td>73</td>
+                    <td>43</td>
+                </tr>
+                <tr>
+                    <td class="blue">Line4</td>
+                    <td>123</td>
+                    <td>43</td>
+                    <td>53</td>
+                    <td>73</td>
+                    <td>43</td>
+                    <td>123</td>
+                    <td>43</td>
+                    <td>53</td>
+                    <td>73</td>
+                    <td>43</td>
+                    <td>123</td>
+                    <td>43</td>
+                    <td>53</td>
+                    <td>73</td>
+                    <td>43</td>
+
+                </tr>
+                <tr>
+                    <td class="blue">Line5</td>
+                    <td>123</td>
+                    <td>43</td>
+                    <td>53</td>
+                    <td>73</td>
+                    <td>43</td>
+                    <td>123</td>
+                    <td>43</td>
+                    <td>53</td>
+                    <td>73</td>
+                    <td>43</td>
+                </tr>
+                <tr>
+                    <td class="blue">Line6</td>
+                    <td>123</td>
+                    <td>43</td>
+                    <td>53</td>
+                    <td>73</td>
+                    <td>43</td>
+                    <td>123</td>
+                    <td>43</td>
+                    <td>53</td>
+                    <td>73</td>
+                    <td>43</td>
+                    <td>123</td>
+                    <td>43</td>
+                    <td>53</td>
+                    <td>73</td>
+                    <td>43</td>
+                </tr>
+                <tr>
+                    <td class="blue">Line7</td>
+                    <td>123</td>
+                    <td>43</td>
+                    <td>53</td>
+                    <td>73</td>
+                    <td>43</td>
+                    <td>123</td>
+                    <td>43</td>
+                    <td>53</td>
+                    <td>73</td>
+                    <td>43</td>
+                    <td>123</td>
+                    <td>43</td>
+                    <td>53</td>
+                    <td>73</td>
+                    <td>43</td>
+                </tr>
+                <tr>
+                    <td class="blue">Line8</td>
+                    <td>123</td>
+                    <td>43</td>
+                    <td>53</td>
+                    <td>73</td>
+                    <td>43</td>
+                    <td>123</td>
+                    <td>43</td>
+                    <td>53</td>
+                    <td>73</td>
+                    <td>43</td>
+                    <td>123</td>
+                    <td>43</td>
+                    <td>53</td>
+                    <td>73</td>
+                    <td>43</td>
+                </tr>
+                <tr>
+                    <td class="blue">Line8</td>
+                    <td>123</td>
+                    <td>43</td>
+                    <td>53</td>
+                    <td>73</td>
+                    <td>43</td>
+                    <td>123</td>
+                    <td>43</td>
+                    <td>53</td>
+                    <td>73</td>
+                    <td>43</td>
+                    <td>123</td>
+                    <td>43</td>
+                    <td>53</td>
+                    <td>73</td>
+                    <td>43</td>
+                </tr>
+                <tr>
+                    <td class="blue">Line8</td>
+                    <td>123</td>
+                    <td>43</td>
+                    <td>53</td>
+                    <td>73</td>
+                    <td>43</td>
+                    <td>123</td>
+                    <td>43</td>
+                    <td>53</td>
+                    <td>73</td>
+                    <td>43</td>
+                    <td>123</td>
+                    <td>43</td>
+                    <td>53</td>
+                    <td>73</td>
+                    <td>43</td>
+                </tr>
+                <tr>
+                    <td class="blue">Line8</td>
+                    <td>123</td>
+                    <td>43</td>
+                    <td>53</td>
+                    <td>73</td>
+                    <td>43</td>
+                    <td>123</td>
+                    <td>43</td>
+                    <td>53</td>
+                    <td>73</td>
+                    <td>43</td>
+                    <td>123</td>
+                    <td>43</td>
+                    <td>53</td>
+                    <td>73</td>
+                    <td>43</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+</body>
+</html>

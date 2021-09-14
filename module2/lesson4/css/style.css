@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    
+}
+
+.container {
+    width: 100vw;
+    min-width: 320px;
+    max-width: 1200px;
+    margin: auto;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background: pink;
+    flex-basis: 10vh;
+}
+
+main {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+main>aside {
+    background: cyan;
+    flex-basis: 20%;
+}
+
+main>section {
+    background: coral;
+    flex: 1 1 auto;
+}
+
+footer {
+    flex-basis: 5vh;
+    background: grey;
+}
+
+main>section+aside {
+    background: lime;
+    flex-basis: 20%;
+}
+

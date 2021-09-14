@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        table, th, td {
+            border: 1px solid #000;
+        }
+        
+        table {
+            border-collapse: collapse;
+        }
+        
+        td {
+            padding: 20px;
+        }
+        
+/*        выровнять заголовок - лево, низ*/
+        caption {
+            text-align: left;
+            caption-side: bottom;
+            text-transform: uppercase;
+            font-size: 24px;
+            font-weight: 700;
+            
+        }
+        
+        .col-1 {
+            background: #ffcccc;
+        }
+        
+          .col-2 {
+            background: #ff9999;
+        }
+        
+          .col-3 {
+            background: #cc9999;
+        }
+        
+        
+        thead{
+            color: #ffff00;
+        }
+        tfoot{
+            color: #ffffff;
+        }
+    
+    
+    </style>
+</head>
+<body>
+<table>
+    <caption>Заголовок таблицы</caption>
+    <colgroup>
+        <col span="2" class="col-1">
+        <col span="4" class="col-2">
+        <col class="col-3">
+    </colgroup>
+    <thead>
+        <tr>
+            <td>cell</td>
+            <td>cell</td>
+            <td>cell</td>
+            <td>cell</td>
+            <td>cell</td>
+            <td>cell</td>
+            <td>cell</td>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>cell</td>
+            <td>cell</td>
+            <td>cell</td>
+            <td>cell</td>
+            <td>cell</td>
+            <td>cell</td>
+            <td>cell</td>
+
+        </tr>
+        <tr>
+            <td>cell</td>
+            <td>cell</td>
+            <td>cell</td>
+            <td>cell</td>
+            <td>cell</td>
+            <td>cell</td>
+            <td>cell</td>
+
+        </tr>
+        <tr>
+            <td>cell</td>
+            <td>cell</td>
+            <td>cell</td>
+            <td>cell</td>
+            <td>cell</td>
+            <td>cell</td>
+            <td>cell</td>
+
+        </tr>
+        <tr>
+            <td>cell</td>
+            <td>cell</td>
+            <td>cell</td>
+            <td>cell</td>
+            <td>cell</td>
+            <td>cell</td>
+            <td>cell</td>
+
+        </tr>
+        <tr>
+            <td>cell</td>
+            <td>cell</td>
+            <td>cell</td>
+            <td>cell</td>
+            <td>cell</td>
+            <td>cell</td>
+            <td>cell</td>
+
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>cell</td>
+            <td>cell</td>
+            <td>cell</td>
+            <td>cell</td>
+            <td>cell</td>
+            <td>cell</td>
+            <td>cell</td>
+
+        </tr>
+    </tfoot>
+   
+</table>
+    
+</body>
+</html>

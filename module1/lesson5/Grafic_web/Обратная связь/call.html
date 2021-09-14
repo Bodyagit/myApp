@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Обратная связь</title>
+    <script src="js/script.js"></script>
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        #callback {
+            position: relative;
+            width: 300px;
+            height: 150px;
+            background: grey;
+          transform: translateX(-100%);
+/*            animation: myAnim 5s linear alternate infinite;*/
+            transition: 2s;
+        }
+        
+    
+        
+        /* стили для абзаца */
+    #callback p{
+        color: #fff;
+        padding: 30px;
+    }
+        
+        /* Стили для пседвоэлемента */
+    #callback:after{
+        content: 'Обратная связь';
+        background-color: pink;
+        text-align: center;
+        border-radius: 0 0 8px 8px;
+        padding: 5px 0;
+        width: 150px; /* ширина псевдоэлемента равна высоте блока, тк будет поворот */
+        position: absolute; /* позиционирование абсолютное */
+        left: 300px; /* позиция слева равен ширине блока #callback */
+        top: 150px; /*позиция сверху равна высоте блока*/
+        transform: rotate(-90deg);
+        transform-origin: 0 0;
+/*        transform: skew(130deg,130deg);*/
+       
+    }
+        
+        #callback:hover {
+            transform: translateX(110%);
+        }
+        
+        
+/*
+    @keyframes myAnim{
+      from{
+        margin-left: 0px;
+      }
+      to{
+        margin-left: 500px;
+      }
+    } 
+*/
+    
+    
+    
+    </style>
+</head>
+<body>
+    <div id="callback">
+        <p>Lorem ipsum dolor sit amet, consectetur
+        adipisicing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua.
+        </p>
+    </div>
+    
+</body>
+</html>

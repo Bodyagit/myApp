@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <style>
+        
+        * {
+	margin: 0;
+	padding: 0;
+}
+html,
+body {
+	height: 100%;
+}
+.wrapper {
+	position: relative;
+	min-height: 100%;
+}
+.content {
+	padding-bottom: 90px;
+}
+.footer {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 80px;
+}
+        
+
+        header {
+            height: 100px;
+            background: pink;
+            margin-bottom: 10px;
+        }
+        
+        .menu {
+            height: 50px;
+            background: pink;
+            margin-bottom: 10px;
+        }
+        
+        .box {
+            float: left;
+        }
+        
+        .block1 {
+           
+            width: 200px;
+            height: 100px;
+            background: pink;
+            margin-bottom: 10px;
+           
+            
+        }
+        
+        .block2 {
+            width: 200px;
+            height: 200px;
+            background: pink;
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+        
+         .block3 {
+            width: 170px;
+            height: 200px;
+            background: pink;
+            margin-right: 10px;
+            margin-bottom: 10px;
+             float: right;
+        }
+        
+        main {
+          padding:50px 100px;
+             width: 630px;
+           margin: 0 20px 10px 20px;
+         
+            height: 400px;
+            background: pink;
+            border: 1px solid #333;
+            float: left;
+        }
+        
+        h1 {
+            text-transform: uppercase;
+            color:#fff;
+            margin-bottom: 100px;
+        }
+        
+        
+        .content::before,
+        .content::after
+        {
+            content: "";
+            display: table;
+        }
+        
+        
+        .content::after {
+            clear: both;
+        }
+        
+        section {
+            border: 1px solid #333;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        
+         p {
+            text-transform: uppercase;
+            color: #fff;
+            padding-top: 20px;
+            padding-left: 40px;
+            font-size: 21px;
+        }
+        
+        .footer {
+            height: 100px;
+            background: pink;
+            border: 1px solid #333;
+            
+        }
+        
+      
+    
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+        <header>
+            <p>header</p>
+        </header>
+        <div class="content">
+            <nav class="menu">
+                <p>menu</p>
+            </nav>
+            <div class="box">
+                <aside class="block1">
+                    <p>aside1</p>
+                </aside>
+                <aside class="block2">
+                    <p>aside2</p>
+                </aside>
+            </div>
+            <main>
+                <h1>main content</h1>
+                <section>
+                    <p>section1</p>
+                </section>
+                <section>
+                    <p>section2</p>
+                </section>
+
+            </main>
+
+            <aside class="block3">
+                <p>aside3</p>
+            </aside>
+
+        </div>
+        <div class="footer">
+            <p>footer</p>
+        </div>
+
+    </div>
+
+</body>
+</html>

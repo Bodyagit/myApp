@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Pseudoelements</title>
+    <style>
+        ::selection {
+            background-color: #fcfc6b;
+        }
+        
+        ::-moz-selection {
+            background-color: #fcfc6b;
+        }
+        
+        main {
+            width: 80%;
+            margin: auto;
+            font-size: 1.2em;
+            font-family: Cambria, serif;
+        }
+        
+        h1 {
+            text-align: center;
+        }
+        
+        .example1 p::-moz-selection {
+            background-color: #f8b363;
+        }
+        
+        .example1 p::selection {
+            background-color: #f8b363;
+        }
+        
+        .example1 p::first-line {
+            color: red;
+            text-shadow: 1px 1px 1px #333;
+            font-family: "Segoe Script", cursive;
+            /* Многие свойства не работают в псевдоэлементах ::first-line */
+            /*  margin-left: 20px;*/
+            /*  text-indent: 20px;*/
+        }
+        
+       .example1 p {
+            text-indent: 20px;
+            margin-left: 20px;
+        }
+        
+        .example2 p::-moz-selection {
+            background-color: #025302;
+            color: #fff;
+        }
+        
+        .example2 p::selection {
+            background-color: #025302;
+            color: #fff;
+        }
+        
+        .example2 p::first-letter {
+            display: inline-block;
+            color: green;
+            font-size: 2em;
+            font-weight: bold;
+            border: 1px solid #1ebc1e;
+            padding: 2px 8px;
+            margin-right: 10px;
+            margin-top: 7px;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Pseudoelements</h1>
+        <h2>::first-line</h2>
+        <div class="example1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit aliquam, vel molestiae officia accusamus quis! Quae repellendus quo odio soluta adipisci deserunt iusto maxime, distinctio impedit omnis nesciunt deleniti blanditiis neque ad reprehenderit modi sunt inventore, iste similique. Veniam unde nesciunt consequatur debitis earum impedit!</p>
+            <p>Itaque commodi impedit magnam eos maiores, fuga nostrum corporis quos quaerat! Vitae amet, incidunt quas quia iure mollitia fugiat quidem perferendis obcaecati soluta minus maxime ipsum repellat nobis, libero autem deleniti architecto dolorem officiis in qui voluptate iste. Voluptatum praesentium quam mollitia velit eaque laborum.</p>
+            <p>Dolores omnis temporibus quas explicabo, harum minus expedita enim eaque, magnam ea sunt? Esse, saepe. Error unde, deleniti iusto molestiae totam veniam consectetur dolore molestias, a itaque non quia magni cumque sint, dolores ad debitis at, laborum veritatis aperiam labore suscipit praesentium quidem. Neque, aliquid.</p>
+        </div>
+        <h2>::first-letter</h2>
+        <div class="example2">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit aliquam, vel molestiae officia accusamus quis! Quae repellendus quo odio soluta adipisci deserunt iusto maxime, distinctio impedit omnis nesciunt deleniti blanditiis neque ad reprehenderit modi sunt inventore, iste similique. Veniam unde nesciunt consequatur debitis earum impedit!</p>
+            <p>Itaque commodi impedit magnam eos maiores, fuga nostrum corporis quos quaerat! Vitae amet, incidunt quas quia iure mollitia fugiat quidem perferendis obcaecati soluta minus maxime ipsum repellat nobis, libero autem deleniti architecto dolorem officiis in qui voluptate iste. Voluptatum praesentium quam mollitia velit eaque laborum.</p>
+            <p>Dolores omnis temporibus quas explicabo, harum minus expedita enim eaque, magnam ea sunt? Esse, saepe. Error unde, deleniti iusto molestiae totam veniam consectetur dolore molestias, a itaque non quia magni cumque sint, dolores ad debitis at, laborum veritatis aperiam labore suscipit praesentium quidem. Neque, aliquid.</p>
+        </div>
+    </main>
+</body>
+
+</html>

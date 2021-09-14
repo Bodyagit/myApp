@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Article Grid with display: inline-block</title>
+    <link rel="stylesheet" href="css/reset.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        main {
+            font-size: 0;
+            font-family: sans-serif;
+        }
+        
+        .grid-item {
+            display: inline-block;
+            vertical-align: top;
+            width: 50%;
+            min-width: 370px;
+            height: 50vmax;
+/*            height: 50vh;*/
+            font-size: 1rem;
+            padding: 8% 4%;
+            /*            margin-right: -.25em;*/
+        }
+        
+        .post-title {
+            font-size: 3em;
+            font-family: Cambria, serif;
+            margin-bottom: 1.5rem;
+        }
+        
+        .grid-item p {
+            margin-bottom: 1rem;
+        }
+        
+        .grid-item a {
+            color: inherit;
+            text-decoration-style: dotted;
+        }
+        
+        .place1 {
+            text-transform: uppercase;
+            margin-bottom: 6px;
+            border-bottom: 1px solid;
+            width: 50%;
+        }
+        
+        .place {
+            text-transform: uppercase;
+            margin-bottom: 6px;
+        }
+        
+        .place::after {
+            content: "";
+            display: block;
+            width: 50%;
+            border-bottom: 1px solid;
+        }
+        
+        .item1 {
+            background-color: #ff0;
+        }
+        
+        .item2 {
+            background-color: #f00;
+        }
+        
+        .item3 {
+            background-color: #0f0;
+        }
+        
+        .item4 {
+            background-color: #37f;
+        }
+        
+        .item5 {
+            background-color: #f94;
+        }
+        
+        .item6 {
+            background-color: #a944ff;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- main>article.grid-item.item$*6>h4.place+h2.post-title+p+a[#]{Read more} -->
+    <main>
+        <article class="grid-item item1">
+            <h4 class="place">California</h4>
+            <!-- <h4 class="place1">California: History, Geography, Population, & State Facts</h4>-->
+            <h2 class="post-title">Jumping Around</h2>
+            <p>California's last empty jump spots</p>
+            <a href="#">Discover more</a>
+        </article>
+        <article class="grid-item item2">
+            <h4 class="place">Italy</h4>
+            <!--   <h4 class="place">Italy Tourism, Tourist Places in Italy, Italy Tour and Travel Guide</h4>-->
+            <h2 class="post-title">Calm Sirenity</h2>
+            <p>Italy's secrets meadows and fields</p>
+            <a href="#">Check them out</a>
+        </article>
+        <article class="grid-item item3">
+            <h4 class="place">New York</h4>
+            <h2 class="post-title">Inspiration for Everybody</h2>
+            <p>Muse about, something incredible is waiting to be known, courage of our questions tesseract hearts of the stars great turbulent clouds the only home.</p>
+            <a href="#">Read more</a>
+        </article>
+        <article class="grid-item item4">
+            <h4 class="place">Sweden</h4>
+            <h2 class="post-title">Build it forever</h2>
+            <p>Sweden's famous furniture</p>
+            <a href="#">Discover more</a>
+        </article>
+        <article class="grid-item item5">
+            <h4 class="place">Spain</h4>
+            <h2 class="post-title">Water Wonders</h2>
+            <p>Spain's amazingly colorful lakes</p>
+            <a href="#">Check them out</a>
+        </article>
+        <article class="grid-item item6">
+            <h4 class="place">Morocco</h4>
+            <h2 class="post-title">The Rise of Moroccan Reggae</h2>
+            <p>Concept of the number one two ghostly white figures in coveralls and helmets are soflty dancing.</p>
+            <a href="#">Read more</a>
+        </article>
+    </main>
+</body>
+
+</html>

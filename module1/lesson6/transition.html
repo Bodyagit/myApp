@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transition CSS</title>
+    <style>
+        body {
+            background: #333;
+        }
+        
+        .box {
+            background: #fff;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            margin: auto;
+            top: 100px;
+            transition-property: background, border-radius, transform;
+            transition-duration: 1s, 3s;
+/*            transition-delay: 0.5s;*/
+            transition-timing-function: ease;
+            animation-iteration-count: infinite;
+        }
+        
+        .box:hover {
+            background: #06639d;
+            border-radius: 50%;
+            transform: rotate(100deg);
+            
+        }
+    
+    </style>
+</head>
+<body>
+   <div class="box">
+       
+       
+   </div>
+    
+</body>
+</html>

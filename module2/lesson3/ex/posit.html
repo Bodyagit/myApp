@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Position</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: "Times New Roman", serif;
+            font-size: 1.1em;
+
+        }
+        
+        .clearfix:after,
+        .clearfix:before {
+            content: '';
+            display: table;
+        }
+        
+        .clearfix:after {
+            clear: both;
+        }
+        
+        .container {
+            width: 700px;
+            margin: auto;
+            min-height: 1200px;
+             
+            border: 6px solid green;
+        
+            
+            
+           
+        }
+        
+        
+        .container2 {
+            margin: 50px;
+            border:3px solid red;
+         
+          
+            
+            
+            
+        }
+        
+        p {
+            color: red;
+            font-weight: 700;
+            font-size: 40px;
+            background: #fff;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            border: 2px dashed #333;
+            display: inline-block;
+            margin-top: 50px;
+           
+           
+            
+            
+        }
+        
+        .block {
+            border: 1px solid #000;
+            background: #e57c7c;
+            width: 145px;
+            padding: 10px;
+            text-align: center;
+            margin-bottom: 10px;
+           
+             min-height: 170px;
+        }
+        
+        .block1 {
+             background: #e57c7c;
+            
+            
+            
+ 
+            
+        }
+        
+         .block2 {
+            background: #7ce584;
+            
+            
+            
+             
+          
+        }
+        
+         .block3 {
+           
+            background: #7cb0e5;
+            
+             
+              
+               
+             
+        }
+         .block4 {
+            background: #cde57c;
+            
+             
+        }
+        .block5 {
+            background: #21221a;
+            
+ 
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+       <div class="container2 clearfix">
+           <div class="block block1 ">
+               <p>1</p>
+           </div>
+           <div class="block block2">
+               <p>2</p>
+           </div>
+           <div class="block block3">
+               <p>3</p>
+           </div>       
+           <div class="block block4">
+               <p>4</p>
+           </div>
+           <div class="block block5 ">
+               <p>5</p>
+           </div>
+       </div>
+   </div>
+    
+</body>
+</html>

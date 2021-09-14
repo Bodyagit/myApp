@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .clearfix::before,
+        .clearfix:after {
+            content: "";
+            display: table;
+        }
+        
+        .clearfix::after {
+            clear: both;
+        }
+        
+        .container {
+            width: 1600px;
+            height: 1200px;
+            background-color: #ebe5e5;
+          
+            overflow: scroll;
+        }
+        
+        
+/*_____menu_____*/
+        
+        .menu {
+            max-width: 125px;
+            height: 1200px;
+            min-height: 1600px;
+            background-color: cadetblue;
+            position: relative;
+            text-align: center;
+        }
+        
+        
+        .menu2 {
+            position: absolute;
+            top: 0;
+            left: 125px;
+            min-height: 1600px;
+            background-color: #446769;
+            padding-top: 55px;
+            padding-right: 30px;
+/*            display:  none;   */
+            visibility: hidden;
+            opacity: 0;
+            transform: translateX(-10px);
+            transition: all 1.3s ease;
+           
+        }
+        
+        .menu2 a {
+            text-decoration: none;
+            color: aliceblue;
+            text-transform: uppercase;
+          
+            line-height: 74px;
+            font-weight: 700;
+            
+        }
+        
+        .menu:hover {
+             background: #446769;
+            
+        }
+        
+        .menu:hover .menu2 {
+            display: block;
+            opacity: none;
+            background: #446769;          
+            visibility: visible;
+            transform: translateX(0);
+            opacity: 1;
+        }
+           
+         
+       
+/*
+        .menu2 {
+            filter: 0.5s;
+        }
+        .menu2:hover {
+            filter:brightness(70%);       
+        }
+      
+*/
+        
+       
+        
+        
+        .menu1 h2 {
+            font-family: Cambria, sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            font-style: italic;
+            padding-top: 20px;
+            margin-left: -20px;
+            text-align: center;
+            color: aliceblue;
+            text-transform: uppercase;
+        }
+        
+/*_____item_____*/
+        
+        .item {
+            float: right;
+            width: 1000px;
+            margin: 20px;
+            position: absolute;
+            top: 5px;
+            left: 200px;
+            padding-left: 100px;
+        }
+        
+        .item h1 {
+            text-transform: uppercase;
+            font-size: 30px;
+            line-height: 80px;
+            font-family: "Times New Roman", sans-serif;
+            
+        }
+        
+        .item p {
+            text-transform: uppercase;
+            line-height: 25px;
+        }
+        
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="menu clearfix">
+        <div class="menu1">
+            <h2>Menu</h2>
+            <img src="img/edit.png" width="70" height="70" alt="edit">
+            <img src="img/favorites.png" width="70" height="70">
+            <img src="img/history.png" width="70" height="70" alt="history">
+            <img src="img/security.png" width="70" height="70" alt="security">
+            <img src="img/settings.png" width="70" height="70" alt="settings">
+        </div>
+        <div class="menu2">
+            <a href="#">edit</a>
+            <a href="#">favorites</a>
+            <a href="#">history</a>
+            <a href="#">security</a>
+            <a href="#">settings</a>
+        </div>
+    </div>
+    <div class="item clearfix">
+        <h1>What is Lorem Ipsum</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id dolor nam cupiditate blanditiis, repudiandae inventore exercitationem saepe tempore, ipsa cumque fugiat at quae alias quasi assumenda dolore totam corrupti impedit excepturi atque. Vitae quis, ab distinctio reprehenderit perspiciatis reiciendis alias, optio sunt sint animi harum quo, ea vel est illo.</p>
+        <h1>Why do we use it</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id dolor nam cupiditate blanditiis, repudiandae inventore exercitationem saepe tempore, ipsa cumque fugiat at quae alias quasi assumenda dolore totam corrupti impedit excepturi atque. Vitae quis, ab distinctio reprehenderit perspiciatis reiciendis alias, optio sunt sint animi harum quo, ea vel est illo.</p>
+        <h1>Where does it come from</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id dolor nam cupiditate blanditiis, repudiandae inventore exercitationem saepe tempore, ipsa cumque fugiat at quae alias quasi assumenda dolore totam corrupti impedit excepturi atque. Vitae quis, ab distinctio reprehenderit perspiciatis reiciendis alias, optio sunt sint animi harum quo, ea vel est illo.</p>
+    </div>
+</div>  
+</body>
+</html>
